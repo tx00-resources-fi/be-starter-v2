@@ -53,7 +53,7 @@ const updateCar = async (req, res) => {
     const updatedCar = await Car.findOneAndUpdate(
       { _id: carId },
       { ...req.body },
-      { new: true, overwrite: true }
+      { new: true }
     );
     if (updatedCar) {
       res.status(200).json(updatedCar);
