@@ -10,7 +10,7 @@ const getAllCars = async (req, res) => {
     res.status(500).json({ message: "Failed to retrieve cars" });
   }
 };
-
+ 
 // POST /cars
 const createCar = async (req, res) => {
   try {
